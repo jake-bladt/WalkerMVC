@@ -3,7 +3,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace WebApplication1.Controllers
+namespace Walker.API.Controllers
 {
     public class AppInfoController : ApiController
     {

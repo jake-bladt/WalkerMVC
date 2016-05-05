@@ -1,8 +1,6 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-
-
 namespace Walker.UI
 {
     public class MvcApplication : System.Web.HttpApplication
