@@ -1,6 +1,8 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
+using Walker.UI.Ninject;
+
 namespace Walker.UI
 {
     public class MvcApplication : System.Web.HttpApplication
@@ -9,6 +11,7 @@ namespace Walker.UI
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            NinjectContainer.RegisterModules(NinjectModules.Modules);
         }
     }
 }
