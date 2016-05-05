@@ -9,9 +9,9 @@ namespace Walker.UI
     {
         protected void Application_Start()
         {
+            NinjectContainer.RegisterModules(NinjectModules.Modules);
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            NinjectContainer.RegisterModules(NinjectModules.Modules);
         }
     }
 }

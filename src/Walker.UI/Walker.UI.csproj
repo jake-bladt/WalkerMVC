@@ -162,7 +162,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Compile Include="App_Start\NinjectContainer.cs" />
+    <Compile Include="App_Start\NinjectModules.cs" />
+    <Compile Include="App_Start\NinjectResolver.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />

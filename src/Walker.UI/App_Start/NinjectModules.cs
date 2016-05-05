@@ -10,7 +10,7 @@ namespace Walker.UI.Ninject
             get
             {
                 //Return Modules to use for DI
-                return new[] { new MainModule() };
+                return new NinjectModule[] { new MainModule(), new MvcControllerModule(), new ApiControllerModule() };
             }
         }
 
@@ -22,5 +22,24 @@ namespace Walker.UI.Ninject
                 //TODO: Bind to Concrete Types Here
             }
         }
+
+        public class MvcControllerModule : NinjectModule
+        {
+            public override void Load()
+            {
+                //TODO: Bind the MVC controllers
+
+            }
+        }
+
+        public class ApiControllerModule : NinjectModule
+        {
+            public override void Load()
+            {
+                //TODO: Bind the API controllers
+
+            }
+        }
+
     }
 }
